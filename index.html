@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Andrés Dueñas</a> <!-- Aclaración sobre diseño -->
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills"onclick="seleccionar()">Skills</a></li>
+                    <!--<li><a href="#curriculum">Curriculum</a></li>-->
+                    <!--<li><a href="#portafolio">Portafolio</a></li>-->
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/img/andy.jpg" alt=""> 
+            </div>
+            <h1>ANDRÉS DUEÑAS</h1>
+            <h2>Desarrollador Full Stack - Soporte tecnico y mesa de ayuda</h2>
+            <div class="redes">
+                <a href="www.linkedin.com/in/andres-dueñas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/573025956905" target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+                <a href="mailto:andresduenas1334@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- SECCIÓN SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-section">
+            <h2>Sobre mi</h2>
+            <p><span>Hola!! Soy Andrés Felipe Dueñas </span>de Colombia, 
+                resido actualmente en la ciudad de Bogotá. Tengo 25 años
+                soy una persona dinámica, honesta y responsable.</p>
+
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Email</strong>
+                                andresduenas2105@gmail.com
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                +57 3025956905
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- intereses -->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Literatura</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>Música</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Viajar</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button>
+                    <a href="pdf/CV_Andres_Dueñas.pdf" class="button" download="Curriculum">Descargar C.V<i class="fa-solid fa-download"></i></a>
+                    <span class="overly"></span>
+                </button>
+        </div>
+    </section>
+
+     <!-- SECCION SKILLS -->
+     <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Soporte Tecnico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mesa de ayuda</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-section">
+            <h2>CONTACTAME</h2>
+            <dvi class="fila">
+                <!-- FORMULARIO -->
+                <form action="/formulario" method="get" target="_blank">
+                    <dvi class="col">
+                        <input type="text" id placeholder="Nombre">
+                        <input type="text" placeholder="Télefono">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Tema"> 
+                        <textarea name="Comentario" id="" cols="30" rows="10" placeholder="Comentarios"></textarea>   
+                        <button>
+                            Enviar<i class="fa-solid fa-paper-plane"></i> 
+                        </bu<tton>       
+                </form>             
+                    </dvi>
+            </dvi>
+        </div>
+   
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="www.linkedin.com/in/andres-dueñas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/573025956905" target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+            <a href="mailto:andresduenas1334@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <div class="derechos">
+            &copy Andrés Dueñas
+        </div>
+    </footer>
+    <script src="scrip.js"></script>
+</body>
+</html>
